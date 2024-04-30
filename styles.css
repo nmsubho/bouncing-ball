@@ -15,3 +15,24 @@
   background-color: #007bff;
   border-radius: 50%;
 }
+
+
+/* Box Opacity Start */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  transition: opacity 0.6s ease;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  width: 100%;
+  gap: 10px;
+}
+
+.container:hover > *:not(:hover){
+  opacity: 0.4;
+}
+/* Box Opacity End */
